@@ -1,0 +1,38 @@
+.header {
+  background: url("../img/bg-header.jpg") no-repeat center / cover;
+  height: 464px;
+  position: relative;
+
+
+  &__top {
+    @include flexsb;
+
+    position: fixed;
+    align-items: center;
+    background-color: #FFF;
+    max-width: 2000px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 15px 26px;
+    box-shadow: 0px 3px 3px -1px rgba(130, 128, 130, 1);
+    z-index: 1;
+  }
+
+  &__menu {
+    display: flex;
+    font-weight: $bold-weight;
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &__item {
+    margin-left: 30px;
+  }
+
+  &__link {
+    @include href;
+  }
+}

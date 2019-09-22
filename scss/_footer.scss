@@ -1,0 +1,15 @@
+.footer {
+  padding: 75px 0;
+  border-top: 1px solid #dbdada;
+
+  & li:first-child {
+    font-weight: $bold-weight;
+    margin-bottom: 15px;
+  }
+
+  & a {
+    @include href;
+    display: block;
+    padding: 5px 0;
+  }
+}

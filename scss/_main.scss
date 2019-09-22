@@ -1,0 +1,39 @@
+.main {
+  padding: 40px 0 75px;
+
+  &__inner {
+    max-width: 490px;
+  }
+
+  &__title {
+    font-weight: $bold-weight;
+    font-size: $main-title-size;
+  }
+
+  &__subtitle {
+    padding-top: 10px;
+    color: #687C94;
+  }
+
+  &__facilities {
+    padding-top: 15px;
+
+    &>p {
+      display: inline-block;
+      padding-right: 30px;
+    }
+  }
+
+  &__descrip {
+    padding-top: 30px;
+    line-height: 1.75;
+  }
+
+  &__contact {
+    @include href;
+
+    display: block;
+    padding-top: 35px;
+    font-weight: $bold-weight;
+  }
+}

@@ -1,0 +1,38 @@
+.hosted {
+  padding-top: 50px;
+
+  &__title {
+    font-size: 28px;
+    font-weight: $bold-weight;
+  }
+
+  &__subtitle {
+    padding-top: 7px;
+    font-size: 14px;
+  }
+
+  &__text {
+    padding: 25px 0;
+  }
+
+  &__button {
+    @include href;
+
+    width: max-content;
+    display: block;
+    border: 1px solid #118488;
+    border-radius: 4px;
+    padding: 14px 25px;
+    color: #118488;
+    font-weight: 700;
+
+    &:active {
+      box-shadow: 0 0 0 4px #ffffff,
+        0 0 0 5px #717171,
+        0 0 0 6px rgba(255, 255, 255, 0.5);
+      transition: box-shadow 0.2s ease;
+      background-color: rgba(174, 234, 236, 1);
+
+    }
+  }
+}

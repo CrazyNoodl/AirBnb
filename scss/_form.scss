@@ -1,0 +1,56 @@
+.form {
+  border: 1px solid #E1E7ED;
+  border-radius: 3px;
+  padding: 30px 30px 38px;
+  height: max-content;
+  position: sticky;
+  top: 100px;
+  width: 330px;
+
+  @include mobile {
+    margin: 45px auto 0;
+  }
+
+  @include mobileL {
+    width: 100%;
+  }
+
+  &__span {
+    display: block;
+    margin-bottom: 39px;
+  }
+
+  &__input {
+    font: inherit;
+    border: 1px solid #E1E7ED;
+    display: block;
+    height: 50px;
+    width: 100%;
+    padding: 14px 0 14px 17px;
+    margin-bottom: 16px;
+    border-radius: 3px;
+  }
+
+  &__button {
+    font: inherit;
+    background: #FD5C63;
+    border-radius: 4px;
+    border: none;
+    color: #fff;
+    width: 100%;
+    font-weight: $bold-weight;
+    padding: 15px 0;
+
+    &:hover {
+      background: darken(#FD5C63, 10%);
+    }
+
+    &:active {
+      box-shadow: rgb(255, 255, 255) 0px 0px 0px 4px,
+        rgb(113, 113, 113) 0px 0px 0px 5px,
+        rgba(255, 255, 255, 0.5) 0px 0px 0px 6px;
+      outline: none;
+      transition: box-shadow 0.2s ease 0s;
+    }
+  }
+}

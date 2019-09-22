@@ -1,0 +1,25 @@
+.amenities {
+
+  &__title {
+    padding-top: 50px;
+    font-size: 20px;
+  }
+
+  &__table {
+    padding-top: 21px;
+    display: block;
+
+    & td {
+      width: 200px;
+      padding: 10px 0;
+    }
+  }
+
+  &__showall {
+    @include href;
+
+    display: block;
+    font-weight: $bold-weight;
+    padding-top: 15px;
+  }
+}

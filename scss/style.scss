@@ -1,0 +1,29 @@
+@import "reset";
+@import "variables";
+@import "fonts";
+@import "mixins";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  @include main-font;
+
+  background-color: $section-color;
+  font-size: $main-size;
+  font-weight: $main-weight;
+  line-height: $main-height;
+  color: $main-color;
+}
+
+@import "container";
+@import "titles";
+@import "header";
+@import "main";
+@import "amenities";
+@import "reviews";
+@import "hamburger";
+@import "form";
+@import "hosted";
+@import "footer";
